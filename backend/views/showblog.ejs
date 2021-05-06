@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include layout %>
+    <div class="container">
+        <h2 align = "center">อ่านบทความ</h2>
+
+
+        <form class ="" action="" method="post">
+            <div class="form-group">
+                <label for="">name</label>
+                <input type="text" name="name" value="<%= param[0].name %>" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">description</label>
+                <input type="text" name="name" value="<%= param[0].description %>" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">author</label>
+                <input type="text" name="author" value="<%= param[0].author %>" class="form-control">
+            </div>
+            <input type="submit" name="" value="back" class="btn btn-primary">
+        </form>
+    </div>
+  </body>
+</html>

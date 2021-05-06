@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include layout %>
+    <div class="container">
+        <h2 align = "center">เขียนบทความ</h2>
+        <form class ="" action="" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="">courseID</label>
+                <input type="text" name="id" value="" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">coursename</label>
+                <input type="text" name="name" value="" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">Turorname</label>
+              <input type="text" name="tutor" value="" class="form-control">
+          </div>
+            <div class="form-group">
+                <label for="">Subject</label>
+                <textarea name="subject" rows="8" cols="80" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">Price</label>
+              <textarea name="price" rows="8" cols="80" class="form-control"></textarea>
+          </div>
+            <div class="form-group">
+                <label for="">Description</label>
+                <textarea name="description" rows="8" cols="80" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">Link</label>
+              <textarea name="link" rows="8" cols="80" class="form-control"></textarea>
+          </div>
+            <label >Attach Photo</label>
+            <input type="file" class="form-control-plaintext" name = "attach_photo" id="formFile" multiple/>
+            <label >Attach video</label>
+            <input type="file" class="form-control-plaintext" name = "attach_video" id="formFile" multiple/>
+            <input type="submit" name="" value="บันทึก" class="btn btn-primary">
+        </form>
+    </div>
+  </body>
+</html>

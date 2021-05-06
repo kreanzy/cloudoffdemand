@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include layout %>
+    <h1>Show all blog</h1>
+    <% if(locals.param){ %>
+        <% Object.values(param).forEach(function(result){ %>
+          <label for="">Topic</label>
+          <input type="text" name="topic" value="<%= result.topic %>" class="form-control">
+        <% }) %>
+    <% } %>
+    <a href="/">Back to menu</a>
+  </body>
+</html>

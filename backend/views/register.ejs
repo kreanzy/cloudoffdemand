@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>        
+        <form class ="" action="" method="post" enctype="multipart/form-data">
+            <div className="form-group">
+                <br />
+                <label >Register</label>
+                <input type="text" class="form-control" placeholder="Username" name="username" required/> <br/>
+                <input type="password" class="form-control" placeholder="Password" name="password" required/> <br/>
+                <input type="password" class="form-control" placeholder="Confirm - Password" name="repassword" required/><br/>
+                <input type="text" class="form-control" placeholder="First Name" name="fname" required/><br/>
+                <input type="text" class="form-control" placeholder="Last Name" name="lname" required/><br/>
+                <input type="text" class="form-control" placeholder="Email" name="email" required/><br/>
+                <input type="text" class="form-control" placeholder="Prompt Pay Number" name="ppnumber" required/><br/>
+                <input type="checkbox"  name="isTutor" checked={this.state.isTutor}/> Register As Tutor<br/><br/>
+                <img src = "data:image/jpg;base64,ivborw0kggoaaaansuheugaaaauaaaafcayaaacnbyblaaaaheleqvqi12p4>">
+                <label >Upload your picture</label>
+                <input type="file" class="form-control-plaintext" name = "file" id="formFile" />
+                <video width="320" height="240" controls>
+                  <source type="video/webm" src="data:video/mov;base64,<%= img.toString('base64')%>">
+                </video>        
+            </div>
+            <div class="text-center">
+                <input class="btn btn-dark col-6 mx-auto" type="submit" value="Register" />
+            </div>
+        </form>
+</div> 
+  </body>
+</html>
